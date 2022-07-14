@@ -14,6 +14,11 @@ class NoTripulada extends Nave {
     testearlugar(){
         return `Testeando el sitio`
     }
+
+    getfullinfo(){
+        `${super.getfullinfo} tipo: ${this.tipo} `;
+    }
+
 }
 
 export default NoTripulada;

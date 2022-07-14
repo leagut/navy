@@ -14,6 +14,10 @@ class Tripulada extends Nave {
     purificao2(){
         return `purificando el Oxigeno de la nave`
     }
+
+    getfullinfo(){
+        `${super.getfullinfo} dias de provision ${this.diasdeprovision} cantidad de tripulantes ${this.tripulantes} `;
+    }
 }
 
 export default Tripulada;

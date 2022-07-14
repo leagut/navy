@@ -14,6 +14,10 @@ class Lanzadera extends Nave {
     enganchandoCarga(){
         return `Enganchando carga`
     }
+
+    getfullinfo(){
+        `${super.getfullinfo} carga en kilos ${this.carga} `;
+    }
 }
 
 export default Lanzadera;

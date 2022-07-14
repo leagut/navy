@@ -13,7 +13,7 @@ class Nave {
     }
 
 
-    getFullCaracter(){
+    getfullinfo(){
         return `${nombre} ${altura} ${peso} ${pais} ${velocidad} ${reutilizable} ${mision}`
     }
 
@@ -24,6 +24,9 @@ class Nave {
     despegar(){
         return ` ${this.nombre}  despegando...`
     }
+
+
+
 }
 
 export default Nave;
