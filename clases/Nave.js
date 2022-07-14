@@ -1,11 +1,4 @@
 class Nave {
-    #nombre;
-    #altura;
-    #peso;
-    #pais;
-    #velocidad;
-    #reutilizable;
-    #mision;
 
     constructor(nombre,altura,peso,pais,velocidad,reutilizable,mision){
 
@@ -19,6 +12,18 @@ class Nave {
 
     }
 
-    
 
+    getFullCaracter(){
+        return `${nombre} ${altura} ${peso} ${pais} ${velocidad} ${reutilizable} ${mision}`
+    }
+
+    encender(){
+        return `Motor del  ${this.nombre}  encendido`
+    }
+
+    despegar(){
+        return ` ${this.nombre}  despegando...`
+    }
 }
+
+export default Nave;

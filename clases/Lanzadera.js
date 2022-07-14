@@ -1,16 +1,19 @@
-import Nave from "../Nave";
+import Nave from "./Nave";
 
 
 class Lanzadera extends Nave {
 
-    #carga = 0;
-
-    constructor(nombre,altura,peso,pais,velocidad,reutilizable,mision){
+    constructor(nombre,altura,peso,pais,velocidad,reutilizable,mision,carga){
         super(nombre,altura,peso,pais,velocidad,reutilizable,mision);   
+        this.carga=carga;
     }
 
-    setCarga(carga){
-        this.#carga=carga;
+    soltarCarga(){
+        return `Soltando carga`
     }
-
+    enganchandoCarga(){
+        return `Enganchando carga`
+    }
 }
+
+export default Lanzadera;
