@@ -1,18 +1,18 @@
 import Nave from "./Nave";
 
 class NoTripulada extends Nave {
-    constructor(nombre,altura,peso,pais,velocidad,reutilizable,mision,diasdeprovision,tripulantes){
+    constructor(nombre,altura,peso,pais,velocidad,reutilizable,mision,tipo){
         super(nombre,altura,peso,pais,velocidad,reutilizable,mision);   
-        this.diasdeprovision=diasdeprovision;
-        this.tripulantes=tripulantes;
+        this.tipo=tipo;
+        
     }
 
-    ahorrodeenergia(){
-        return `Se activo el modo energia`
+    desplegarequipamento(){
+        return `Desacoplando equipo e iniciando instalacion`
     }
 
-    purificao2(){
-        return `purificando el Oxigeno de la nave`
+    testearlugar(){
+        return `Testeando el sitio`
     }
 }
 
